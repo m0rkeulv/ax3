@@ -5,14 +5,6 @@ abstract ASObject(flash.utils.Object)
 	to flash.utils.Object
 	from Dynamic
 {
-	public static inline function typeReference() {
-		#if flash
-		return flash.utils.Object;
-		#else
-		return Dynamic;
-		#end
-	}
-
 	public inline function new() this = cast {};
 
 	@:noCompletion
